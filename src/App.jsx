@@ -13,7 +13,9 @@ import PasswordReset from './components/LoginRegister/PasswordReset';
 import JobFairs from './components/JobFairs/JobFairs';
 import ContactUs from './components/ContactUs';
 import VirtualCareerFair from './components/JobFairs/VirtualCareerFair';
-
+import DisabledPeople from './components/DisabledPeople/DisabledPeople';
+import CoverLetter from './components/CoverLetter/CoverLetter';
+import DisabledWorker from './components/DisabledWorker/DisabledWorker';
 
 const App = () => {
   return (
@@ -31,7 +33,12 @@ const App = () => {
           <Route path="/employers/auth/login" element={<EmployerLogin />} />
           <Route path="/auth/registration" element={<ApplicantRegistration />} />
           <Route path="/auth/login" element={<ApplicantLogin/>}/>
-          <Route path="auth/forgot_password" element={<PasswordReset/>} />
+          <Route path="/auth/forgot_password" element={<PasswordReset/>} />
+          <Route path="/business-benefits-of-hiring-disabled-people" element={<DisabledPeople/>} />
+          <Route path="/the-importance-of-a-great-cover-letter" element={<CoverLetter/>} />
+          <Route path="/disabled-workers-have-much-to-offer" element={<DisabledWorker/>} />
+
+
         </Routes>
       </div>
     </Router>
